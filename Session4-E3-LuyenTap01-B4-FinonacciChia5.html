@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let fiBo;
+    let kq;
+    for (let i = 0; i >=0;i++) {
+        fiBo=fibonacci(i);
+        if (fiBo%5==0 && fiBo!=0) {
+            alert(fiBo);
+            break;
+        }
+    }
+    function fibonacci(num) {
+        if (num<=1) {
+            return num;
+        }
+        return fibonacci(num-1)+fibonacci(num-2);
+    }
+</script>
+</body>
+</html>

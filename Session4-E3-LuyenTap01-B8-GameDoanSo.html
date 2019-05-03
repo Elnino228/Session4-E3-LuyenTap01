@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<button type="button" id="play" onclick="Play()" >Choi</button>
+<script>
+    function Play() {
+
+            let N=Number(prompt('Nhap khoang so muon doan: '));
+            let nMachine=Math.round(Math.random()*N,0)  ;
+            alert(nMachine);
+            let nPerson =Number(prompt('Ban doan so bao nhieu:'));
+            for (let count=1;count>=1;count++) {
+
+
+                if (nPerson>nMachine){
+                    alert('Ban can doan so nho hon');
+                    nPerson=Number(prompt('Ban doan so'));
+                } else if (nPerson<nMachine){
+                    alert('Ban can doan so lon hon');
+                    nPerson=Number(prompt('Ban doan so'));
+                }
+                if (nMachine==nPerson) {
+                    alert('Chuc mung ban da doan dung!');
+                    break;
+                }
+                if (count==2) {
+                    alert('Ban da thua');
+                    break;
+                }
+
+            }
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    //let cout=1;
+    let str='';
+    for (let cout=1;cout<=100;cout++){
+        if (cout%3==0 && cout%5==0) {
+            str=str+'FizzBuzz'+'<br>';
+        }  else if (cout%5==0) {
+            str=str+'Buzz'+'<br>';
+        } else if (cout%3==0) {
+            str=str+'Fizz'+'<br>';
+        } else {
+            str=str+cout+'<br>';
+        }
+    }
+    document.write(str);
+</script>
+</body>
+</html>
